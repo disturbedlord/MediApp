@@ -3,6 +3,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { Dumbbell, Pill, CalendarDays, Dot, Circle } from "lucide-react";
 import CoreLogic, { MedicineInfo } from "../Logic/LogicComponent";
+import "../App.css";
 
 function formatDate(date) {
   return date.toISOString().split("T")[0];
@@ -10,7 +11,7 @@ function formatDate(date) {
 
 export default function CalendarComponent() {
   return (
-    <div className="p-6 max-w-md mx-auto">
+    <div className="p-6 max-w-md mx-auto calendar">
       <Calendar
         tileContent={({ date, view }) => {
           if (view !== "month") return null;
@@ -24,9 +25,11 @@ export default function CalendarComponent() {
           return (
             <div
               style={{
-                display: " flex",
-                flexDirection: "row",
-                justifyItems: "center",
+                display: "grid",
+                gridTemplateColumns: "repeat(3,1fr)",
+                gap: 1,
+                height: 20,
+                backgroundColor: "transparent",
               }}
             >
               {Object.entries(medData).map(([med, toTake]) => {
@@ -36,11 +39,12 @@ export default function CalendarComponent() {
                   {
                     return (
                       <div
+                        key={med + Math.random()}
                         style={{
                           borderRadius: 100,
                           backgroundColor: MedicineInfo[med].color,
-                          height: 5,
-                          width: 5,
+                          height: 10,
+                          width: 10,
                         }}
                       />
                     );

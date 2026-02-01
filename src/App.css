@@ -1,4 +1,14 @@
-* {
+body {
   background-color: white;
 }
 
+.calendar, .react-calendar__navigation__label,.react-calendar__tile, .react-calendar__month-view__weekdays__weekday{
+   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.gap {
+  height: 20px;
+}
