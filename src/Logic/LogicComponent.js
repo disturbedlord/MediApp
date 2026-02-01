@@ -9,27 +9,27 @@ const medicineFreq = {
 
 export const MedicineInfo = {
   "metXL-25": {
-    color: "#942404",
+    color: "#ff0000",
     name: "Metoprolol-XL 25mg",
   },
   "oxra-10": {
-    color: "	#20635f",
+    color: "#008080",
     name: "Oxra 10mg",
   },
   omnacortil: {
-    color: "#1c4392",
+    color: "#0000ff",
     name: "Omnacortil 2.5mg",
   },
   febuget: {
-    color: "#dcc4ac",
+    color: "#794044",
     name: "Febuxostat 40mg",
   },
   zavetox: {
-    color: "#2474bb",
+    color: "#ffd700",
     name: "Zavetox",
   },
   renoque: {
-    color: "	#666666",
+    color: "#696969",
     name: "Renoque",
   },
 };
