@@ -1,7 +1,7 @@
 const medicineFreq = {
   "metXL-25": 1,
   "oxra-10": 1,
-  omnacortil: 3,
+  omnacortil: 4,
   febuget: 2,
   zavetox: 1,
   renoque: 2,
@@ -46,7 +46,7 @@ function CreateCurrentDayMedicines() {
 }
 
 export default function CoreLogic(date) {
-  const startDate = "2026-01-01";
+  const startDate = "2025-12-31";
   const currentDate = date;
   //Get Number of days between current date and start date
   const daysDiff = Math.abs(
